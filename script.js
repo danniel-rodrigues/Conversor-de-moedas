@@ -23,5 +23,5 @@ let DollarQuote = async() => {
     updateHTML(data);
 };
 
-
-DollarQuote();
+// Atualiza função da cotação do dólar a cada 1 minuto
+setInterval(() => { DollarQuote(); }, 60000);
