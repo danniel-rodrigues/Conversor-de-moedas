@@ -48,4 +48,4 @@ let DollarQuote = async() => {
 
 
 // Atualiza função da cotação do dólar a cada 1 minuto
-setInterval(() => { DollarQuote();}, 60000);
+setInterval(() => { DollarQuote();}, 30000);
