@@ -58,8 +58,14 @@ section.converter-box {
     box-shadow: 0px 20px 60px 20px rgba(0, 0, 0, 0.075);
 }
 
+.converter-box .convert-arrow {
+    width: 64px;
+    height: 64px;
+}
+
 .converter-box #info-update {
     color: #3B9E9D;
+    font-size: 14px;
 }
 
 .converter-option {
@@ -67,15 +73,15 @@ section.converter-box {
     align-items: center;
     justify-content: center;
     background-color: #EEE;
-    width: 540px;
-    height: 60px;
+    width: 450px;
+    height: 50px;
     border-radius: 22px;
     box-shadow: inset 0px 0px 20px 8px hsla(0, 0%, 0%, 0.052);
 }
 
 .converter-option a {
     text-align: center;
-    line-height: 55px;
+    line-height: 45px;
     text-decoration: none;
     font-size: 20px;
     color: #8E8E8E;
@@ -92,8 +98,8 @@ section.converter-box {
 }
 
 #btn-comprar, #btn-vender {
-    width: 267px;
-    height: 55px;
+    width: 222px;
+    height: 45px;
 }
 
 #btn-comprar {
@@ -122,18 +128,19 @@ section.converter-box {
 
 .convert.convert-from {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .convert p {
-    font-size: 14px;
+    font-size: 12px;
     color: #8E8E8E;
     font-weight: 500;
+    text-align: left;
 }
 
 .convert #select-to, .convert #select-from {
     font-size: 24px;
-    width: 295px;
+    width: 215px;
     height: 51px;
     border-radius: 10px;
     padding-left: 40px;
@@ -144,9 +151,10 @@ section.converter-box {
 
 .value-box input {
     font-family: 'Inter', sans-serif;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 500;
     width: 150px;
+    margin-right: 20px;
     color: #8E8E8E;
     border: none;
     outline: none;
