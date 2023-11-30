@@ -13,34 +13,38 @@
             <h1>Faça conversões de moedas de forma simples!</h1>
             <p>Selecione a moeda de entrada e a moeda alvo e consulte os valores de compra e venda.</p>
         </div>
-        <img src="images/img-illustration.png" alt="Ilustração de pessoas consultando rendimento de aplicações dos seus dinheiros." class="img-illustration">
+        <img src="images/img-illustration.svg" alt="Ilustração de pessoas consultando rendimento de aplicações dos seus dinheiros." class="img-illustration">
     </header>
     <main>
         <section class="converter-box">
             <div class="converter-option">
-                <a href="#">Comprar</a>
-                <a href="#">Vender</a>
+                <a href="#" id="btn-comprar" class="active">Comprar</a>
+                <a href="#" id="btn-vender">Vender</a>
             </div>
-            <div class="convert-to">
+            <div class="convert convert-to">
                 <div class="value-box">
                     <p>VOCÊ PAGA</p>
-                    <input type="number" name="value-to" id="value-to">
+                    <input type="number" name="value-to" id="value-to" value="0.00">
                 </div>
-                <select name="select-to" id="select-to"></select>
+                <select name="select-to" id="select-to">
+                    <option value="">USD</option>
+                </select>
             </div>
             <img src="images/convert-arrow.png" alt="setas indicando conversão de valores." class="convert-arrow">
-            <div class="convert-from">
+            <div class="convert convert-from">
                 <div class="value-box">
                     <p>VOCÊ RECEBE</p>
-                    <input type="number" name="value-from" id="value-from">
+                    <input type="number" name="value-from" id="value-from" value="0.00">
                 </div>
-                <select name="select-from" id="select-from"></select>
+                <select name="select-from" id="select-from">
+                    <option value="">GBP</option>
+                </select>
             </div>
-            <p>Atualizado em: <span class="date">30/11/2023</span> às <span class="hour">14:17</span></p>
+            <p id="info-update">Atualizado em: <span class="date">30/11/2023</span> às <span class="hour">14:17</span></p>
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por <span class="github"><img src="images/github-icon.png" alt="">Daniel Rodrigues</span></p>
+        <p>Desenvolvido por <a href="#"><span class="github"><img src="images/github-icon.png" alt="Página do GitHub">Daniel Rodrigues</span></a></p>
     </footer>
 </body>
 </html>
