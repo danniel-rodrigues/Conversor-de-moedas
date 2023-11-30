@@ -50,9 +50,10 @@ main {
 
 section.converter-box {
     background-color: #F5FBEF;
-    padding: 40px 40px 20px 40px;
+    padding: 30px 40px 20px 40px;
     border-radius: 40px;
     margin-top: -60px;
+    margin-bottom: 100px;
     text-align: center;
     box-shadow: 0px 20px 60px 20px rgba(0, 0, 0, 0.075);
 }
@@ -156,3 +157,19 @@ section.converter-box {
 .value-box input::-webkit-outer-spin-button {
     appearance: none;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5FBEF;
+    background-color: #2E2532;
+    width: 100%;
+    height: 50px;
+}
+
+footer a {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
