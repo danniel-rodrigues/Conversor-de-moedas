@@ -73,7 +73,7 @@ section.converter-box {
     align-items: center;
     justify-content: center;
     background-color: #EEE;
-    width: 450px;
+    width: 650px;
     height: 50px;
     border-radius: 22px;
     box-shadow: inset 0px 0px 20px 8px hsla(0, 0%, 0%, 0.052);
@@ -94,11 +94,11 @@ section.converter-box {
 }
 
 .converter-option a:not(:last-child) {
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 #btn-comprar, #btn-vender {
-    width: 222px;
+    width: 321px;
     height: 45px;
 }
 
@@ -140,11 +140,11 @@ section.converter-box {
 
 .convert #select-to, .convert #select-from {
     font-size: 24px;
-    width: 215px;
+    width: 350px;
     height: 51px;
     border-radius: 10px;
-    padding-left: 40px;
-    color: #2E2532;
+    padding-left: 30px;
+    color: #666566;
     border: 2px solid #eee;
     outline: none;
 }
@@ -153,7 +153,7 @@ section.converter-box {
     font-family: 'Inter', sans-serif;
     font-size: 54px;
     font-weight: 500;
-    width: 150px;
+    width: 200px;
     margin-right: 20px;
     color: #8E8E8E;
     border: none;
