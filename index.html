@@ -2,30 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
-    <title>Conversor de Moedas</title>
 </head>
-<body onload="DollarQuote()">
-    <section class="container">
-        <article class="info-panel">
-            <p>1 Dólar americano igual a</p>
-            <strong><span id="dolar-update"></span> Real brasileiro</strong>
-            <footer><small id="time-update"></small></footer>
-        </article>
-    
-        <article class="conversion-panel">
-            <label for="dolar-value">Dólar</label>
-            <input type="number" name="dolar-value" id="dolar-value">
-
-            <label for="real-value">Real</label>
-            <input type="number" name="real-value" id="real-value">
-        </article>
-    </section>
+<body>
+    <header>
+        <div class="info-container">
+            <img src="images/Logotipo.png" alt="Logotipo" class="logo">
+            <h1>Faça conversões de moedas de forma simples!</h1>
+            <p>Selecione a moeda de entrada e a moeda alvo e consulte os valores de compra e venda.</p>
+        </div>
+        <img src="images/img-illustration.svg" alt="Ilustração de pessoas consultando rendimento de aplicações dos seus dinheiros." class="img-illustration">
+    </header>
+    <main>
+        <section class="converter-box">
+            <div class="converter-option">
+                <a href="#" id="btn-comprar" class="active">Comprar</a>
+                <a href="#" id="btn-vender">Vender</a>
+            </div>
+            <div class="convert convert-from">
+                <div class="value-box">
+                    <p>VOCÊ PAGA</p>
+                    <input type="number" name="value-from" id="value-from" value="0.00">
+                </div>
+                <select name="select-from" id="select-from"></select>
+            </div>
+            <img src="images/convert-arrow.png" alt="setas indicando conversão de valores." class="convert-arrow">
+            <div class="convert convert-to">
+                <div class="value-box">
+                    <p>VOCÊ RECEBE</p>
+                    <input type="number" name="value-to" id="value-to" value="0.00">
+                </div>
+                <select name="select-to" id="select-to"></select>
+            </div>
+            <p id="info-update">Atualizado em: <span class="date">30/11/2023</span> às <span class="hour">14:17</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por </p>
+        <a href="https://github.com/danniel-rodrigues"><img src="images/github-contact-box.png" alt="Página do GitHub"></a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
