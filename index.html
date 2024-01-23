@@ -8,42 +8,31 @@
 </head>
 <body>
     <header>
-        <div class="info-container">
-            <img src="images/Logotipo.png" alt="Logotipo" class="logo">
+        <div class="header-info">
+            <img src="images/Logotipo.png" id="logo" alt="logotipo do conversor de moedas">
             <h1>Faça conversões de moedas de forma simples!</h1>
-            <p>Selecione a moeda de entrada e a moeda alvo e consulte os valores de compra e venda.</p>
+            <h2>Selecione a moeda de entrada e a moeda alvo e consulte os valores.</h2>
         </div>
-        <img src="images/img-illustration.svg" alt="Ilustração de pessoas consultando rendimento de aplicações dos seus dinheiros." class="img-illustration">
+        <img src="images/img-illustration.svg" id="img-illustration" alt="Ilustração de pessoas consultando rendimento de aplicações dos seus dinheiros.">
     </header>
     <main>
         <section class="converter-box">
-            <div class="converter-option">
-                <a href="#" id="btn-comprar" class="active">Comprar</a>
-                <a href="#" id="btn-vender">Vender</a>
+            <div class="convert-from">
+                <input type="number" name="from-value" id="from-value" placeholder="0,00">
+                <select name="from-select" id="from-select"></select>
             </div>
-            <div class="convert convert-from">
-                <div class="value-box">
-                    <p>VOCÊ PAGA</p>
-                    <input type="number" name="value-from" id="value-from" value="0.00">
-                </div>
-                <select name="select-from" id="select-from"></select>
+            <img src="images/convert-arrow.png" id="convert-arrow" alt="setas de conversão">
+            <div class="convert-to">
+                <input type="number" name="to-value" id="to-value" placeholder="0,00">
+                <select name="to-select" id="to-select"></select>
             </div>
-            <img src="images/convert-arrow.png" alt="setas indicando conversão de valores." class="convert-arrow">
-            <div class="convert convert-to">
-                <div class="value-box">
-                    <p>VOCÊ RECEBE</p>
-                    <input type="number" name="value-to" id="value-to" value="0.00">
-                </div>
-                <select name="select-to" id="select-to"></select>
-            </div>
-            <p id="info-update">Atualizado em: <span class="date">30/11/2023</span> às <span class="hour">14:17</span></p>
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por </p>
-        <a href="https://github.com/danniel-rodrigues"><img src="images/github-contact-box.png" alt="Página do GitHub"></a>
+        <p>Desenvolvido por</p>
+        <a href="https://github.com/danniel-rodrigues">
+            <img src="images/github-contact-box.png" alt="Página do GitHub">
+        </a>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

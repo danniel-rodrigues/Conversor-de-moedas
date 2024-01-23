@@ -5,39 +5,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Inter', sans-serif;
-    background-color: #F5FBEF;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 40px 100px;
     width: 100%;
     height: 400px;
+    background-color: gray;
+    padding: 40px 100px;
+    color: #F5FBEF;
     background: linear-gradient(to bottom,
         #3B9E9D 0%, #48A3B8 25%,
         #54A7D1 75%, #63ADF2 100%);
 }
 
-.info-container h1 {
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info {
+    width: 500px;
+    text-shadow: 4px 1px 5px #00000028;
+}
+
+.header-info h1 {
     margin-top: 60px;
     margin-bottom: 25px;
-    width: 500px;
-    font-size: 2em;
-    color: #F5FBEF;
+    font-size: 2rem;
 }
 
-.info-container p {
-    width: 500px;
-    font-size: 20px;
-    color: #F5FBEF;
+.header-info h2 {
+    font-weight: normal;
+    font-size: 1.25rem;
 }
 
-.img-illustration {
+#logo {
+    width: 223px;
+    height: 54px;
+}
+
+#img-illustration {
     width: 375px;
     height: 278px;
 }
@@ -46,133 +56,73 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
-section.converter-box {
+.converter-box {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
     background-color: #F5FBEF;
-    padding: 30px 40px 20px 40px;
-    border-radius: 40px;
-    margin-top: -60px;
-    margin-bottom: 100px;
-    text-align: center;
     box-shadow: 0px 20px 60px 20px rgba(0, 0, 0, 0.075);
+    border: 1px solid #ddd;
+    width: 750px;
+    max-width: 750px;
+    height: 500px;
+    border-radius: 30px;
+    margin-top: -50px;
 }
 
-.converter-box .convert-arrow {
-    width: 64px;
-    height: 64px;
-}
-
-.converter-box #info-update {
-    color: #3B9E9D;
-    font-size: 14px;
-}
-
-.converter-option {
+.convert-from, .convert-to {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EEE;
-    width: 650px;
-    height: 50px;
-    border-radius: 22px;
-    box-shadow: inset 0px 0px 20px 8px hsla(0, 0%, 0%, 0.052);
-}
-
-.converter-option a {
-    text-align: center;
-    line-height: 45px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #8E8E8E;
-    font-weight: 500;
-}
-
-.converter-option a:hover, .converter-option a.active {
+    padding: 20px 30px;
     background-color: #fff;
-    color: #3B9E9D;
-}
-
-.converter-option a:not(:last-child) {
-    margin-right: 4px;
-}
-
-#btn-comprar, #btn-vender {
-    width: 321px;
-    height: 45px;
-}
-
-#btn-comprar {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-#btn-vender {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.convert {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    border-radius: 20px;
-    border: 3px solid #eee;
-}
-
-.convert.convert-to {
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-.convert.convert-from {
-    margin-top: 60px;
-    margin-bottom: 10px;
-}
-
-.convert p {
-    font-size: 12px;
-    color: #8E8E8E;
-    font-weight: 500;
-    text-align: left;
-}
-
-.convert #select-to, .convert #select-from {
-    font-size: 24px;
-    width: 350px;
-    height: 51px;
-    border-radius: 10px;
-    padding-left: 30px;
-    color: #666566;
     border: 2px solid #eee;
-    outline: none;
+    border-radius: 20px;
 }
 
-.value-box input {
-    font-family: 'Inter', sans-serif;
-    font-size: 54px;
+#from-value, #to-value {
+    width: 250px;
+    height: 80px;
+    font-size: 4rem;
     font-weight: 500;
-    width: 200px;
     margin-right: 20px;
-    color: #8E8E8E;
     border: none;
     outline: none;
-    background-color: transparent;
+    color: #8E8E8E;
 }
 
-.value-box input::-webkit-inner-spin-button,
-.value-box input::-webkit-outer-spin-button {
+#from-value::-webkit-inner-spin-button,
+#from-value::-webkit-outer-spin-button,
+#to-value::-webkit-inner-spin-button,
+#to-value::-webkit-outer-spin-button {
     appearance: none;
+}
+
+
+#from-select, #to-select {
+    width: 300px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#convert-arrow {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px 10px 0px;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F5FBEF;
     background-color: #2E2532;
-    width: 100%;
+    color: #F5FBEF;
     height: 50px;
 }
 
