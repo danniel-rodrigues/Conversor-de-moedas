@@ -106,7 +106,12 @@ main {
     color: #2E2532;
 }
 
-#value-conversion, #result{
+#value-precision {
+    color: #2E2532;
+    margin-top: 20px;
+}
+
+#value-conversion, #converted-value{
     width: 230px;
     height: 65px;
     font-size: 4rem;

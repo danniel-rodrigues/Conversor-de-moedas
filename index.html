@@ -25,14 +25,15 @@
             <div class="conversion-values">
                 <div>
                     <p class="info-conversion">Informe o valor</p>
-                    <input type="number" name="value-conversion" id="value-conversion" placeholder="0,00">
+                    <input type="number" name="value-conversion" id="value-conversion" min="1" value="1">
                 </div>
                 <img src="images/convert-arrow.png" id="convert-arrow" alt="setas de conversão">
                 <div>
                     <p class="info-conversion">Resultado</p>
-                    <input type="text" name="result" id="result" placeholder="0,00" readonly>
+                    <input type="text" name="converted-value" id="converted-value" placeholder="0,00" readonly>
                 </div>
             </div>
+            <p id="value-precision"></p>
         </section>
     </main>
     <footer>
