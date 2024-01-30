@@ -17,15 +17,23 @@
     </header>
     <main>
         <section class="converter-box">
+            <p id="info-currencies">Escolha as moedas</p>
             <div class="convert-from">
-                <input type="number" name="from-value" id="from-value" placeholder="0,00">
                 <select name="from-select" id="from-select"></select>
-            </div>
-            <img src="images/convert-arrow.png" id="convert-arrow" alt="setas de conversão">
-            <div class="convert-to">
-                <input type="number" name="to-value" id="to-value" placeholder="0,00">
                 <select name="to-select" id="to-select"></select>
             </div>
+            <div class="conversion-values">
+                <div>
+                    <p class="info-conversion">Informe o valor</p>
+                    <input type="number" name="value-conversion" id="value-conversion" min="1" value="1">
+                </div>
+                <img src="images/convert-arrow.png" id="convert-arrow" alt="setas de conversão">
+                <div>
+                    <p class="info-conversion">Resultado</p>
+                    <input type="text" name="converted-value" id="converted-value" placeholder="0,00" readonly>
+                </div>
+            </div>
+            <p id="value-precision"></p>
         </section>
     </main>
     <footer>
@@ -34,5 +42,6 @@
             <img src="images/github-contact-box.png" alt="Página do GitHub">
         </a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

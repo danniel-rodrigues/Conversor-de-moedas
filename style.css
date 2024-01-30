@@ -56,7 +56,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .converter-box {
@@ -69,12 +69,20 @@ main {
     border: 1px solid #ddd;
     width: 750px;
     max-width: 750px;
-    height: 500px;
+    height: 450px;
     border-radius: 30px;
     margin-top: -50px;
 }
 
-.convert-from, .convert-to {
+#info-currencies {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #2E2532;
+}
+
+.convert-from, .conversion-values{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,37 +92,62 @@ main {
     border-radius: 20px;
 }
 
-#from-value, #to-value {
-    width: 250px;
-    height: 80px;
+.convert-from {
+    margin-bottom: 40px;
+}
+
+.conversion-values {
+    padding: 20px 30px 30px 30px;
+}
+
+.info-conversion {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #2E2532;
+}
+
+#value-precision {
+    color: #2E2532;
+    margin-top: 20px;
+}
+
+#value-conversion, #converted-value{
+    width: 230px;
+    height: 65px;
     font-size: 4rem;
     font-weight: 500;
-    margin-right: 20px;
+    border-radius: 5px;
     border: none;
     outline: none;
     color: #8E8E8E;
+    background-color: #f5f5f5;
+    text-align: center;
 }
 
-#from-value::-webkit-inner-spin-button,
-#from-value::-webkit-outer-spin-button,
-#to-value::-webkit-inner-spin-button,
-#to-value::-webkit-outer-spin-button {
+#value-conversion::-webkit-inner-spin-button,
+#value-conversion::-webkit-outer-spin-button {
     appearance: none;
 }
 
-
 #from-select, #to-select {
-    width: 300px;
+    width: 250px;
     height: 65px;
     border-radius: 10px;
     border: none;
     outline: none;
+    background-color: #f5f5f5;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#from-select {
+    margin-right: 30px;
 }
 
 #convert-arrow {
-    width: 80px;
-    height: 80px;
-    margin: 10px 0px 10px 0px;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
 }
 
 footer {
@@ -130,4 +163,3 @@ footer a {
     margin-top: 5px;
     margin-left: 10px;
 }
-
