@@ -124,11 +124,6 @@ main {
     text-align: center;
 }
 
-#value-conversion::-webkit-inner-spin-button,
-#value-conversion::-webkit-outer-spin-button {
-    appearance: none;
-}
-
 #from-select, #to-select {
     width: 250px;
     height: 65px;
@@ -162,4 +157,14 @@ footer {
 footer a {
     margin-top: 5px;
     margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #54A7D1;
+    border-radius: 20px;
+    border: 2px solid #fff;
 }
