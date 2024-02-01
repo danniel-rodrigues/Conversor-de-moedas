@@ -21,7 +21,7 @@ const state = (() => {
 })()
 
 const internalExchangeRate = state
-const APIKey = process.env.EXCHANGERATE_API_KEY 
+const APIKey = "0b1ce975e34cbfc6b2688589" 
 const getUrl = currency => `https://v6.exchangerate-api.com/v6/${APIKey}/latest/${currency}`
 
 const getErrorMessage = errorType => ({
